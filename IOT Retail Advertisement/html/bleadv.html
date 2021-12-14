@@ -43,7 +43,7 @@
     <br>
     <form>
         <!-- <button>Connect with BLE device</button> -->
-        <button type="button" class="btn btn-outline-primary">Connect with BLE device</button>
+        <button>Connect with BLE device</button>
     </form>
 
     <script>
@@ -64,7 +64,7 @@
         function getDeviceInfo() {
             let options = {
               //acceptAllDevices: true // Option to accept all devices
-               "filters": [{"name":deviceName},{"name":deviceName1},{"name":deviceName2}]
+               "filters": [{"name":deviceName},{"name":deviceName1},{"name":deviceName2},{"name":deviceName3}]
             }
 
             console.log('Requesting Bluetooth Device...')

@@ -71,12 +71,21 @@
         <div class="row">
           <div class="col-lg-6">
             <h2 class="heading">About me</h2>
-            <p class="lead">Engineering Student</p>
-            <p>I am a third-year engineering student. Passionate about innovation and new ideas. </p>
-            <p>Interested in the applications of Artificial Intelligence and Machine Learning. Aspiring Data Scientist.</p>
+            <p class="lead">I am <span id="element"></span>
+              <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+              <script>
+                var typed = new Typed('#element', {
+                  strings: ['an engineer.', 'a technophile.', 'a computer vision enthusiast.','a team player.','creative thinker.','a cricket fanatic.','Samarth.'],
+                  typeSpeed: 45,
+                });
+              </script></p>
+            <p>Welcome to my portfolio! I am a dedicated and versatile individual with a strong academic background and a passion for technology. I hold a Masters Degree in Robotics, specializing in Artificial Intelligence from University at Buffalo - SUNY, where I developed a solid foundation in Computer Vision, Image Processing, Deep Learning and Internet of Things. With a focus on technical proficiency, I am skilled in programming languages and libraries such as Python, OpenCV, YOLO and well-versed in utilizing tools like Kubernetes, Docker, and GIT to streamline development processes.
+              Beyond the classroom, my hands-on experience and commitment to continuous learning have equipped me with a deep understanding of software development and the latest industry trends. My non-technical skills include problem-solving, critical thinking, quick adaptation, and a research-oriented mindset, which further enhance my ability to excel in diverse environments.
+              In addition to my technical expertise, I bring a creative and well-rounded perspective to the table. Outside of the tech realm, I engage in hobbies such as traveling, cooking and watching a wide range of content ranging from latest tech innovations to sports like cricket, fueling my curiosity and fostering a balanced approach to life. Explore my portfolio to gain insights into my educational journey, technical skills, and the unique blend of qualities that define my professional identity.
+            </p>
           </div>
           <div class="col-lg-5 mx-auto">
-            <p><img src="img/dp.jpeg" alt="" class="img-fluid rounded-circle"></p>
+            <p><img src="img/dp_portfolio-final.jpg" alt="" class="img-fluid rounded-circle"></p>
           </div>
         </div>
       </div>
@@ -88,65 +97,107 @@
         <div class="row services">
           <div class="col-lg-12">
             <h2 class="heading">Skills</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fab fa-python"></i></div>
-                  <h5>Python</h5>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Languages
+                  </button>
+                </h5>
+              </div>
+      
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                <div class="card-body">
+                  <ol class="list-group">
+                    <li class="list-group-item"><i class="fab fa-java"></i> Java</li>
+                    <li class="list-group-item"><i class="fab fa-python"></i> Python</li>
+                    <li class="list-group-item"><i class="fas fa-database"></i> SQL</li>
+                  </ol>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fab fa-html5"></i></div>
-                  <h5>HTML</h5>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Libraries
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                <div class="card-body">
+                  <ol class="list-group">
+                    <li class="list-group-item"><i class="fas fa-cogs"></i> OpenCV</li>
+                    <li class="list-group-item"><i class="fas fa-book"></i> NLTK</li>
+                    <li class="list-group-item"><i class="fas fa-hashtag"></i> NumPy</li>
+                    <li class="list-group-item"><i class="fas fa-table"></i> Pandas</li>
+                    <li class="list-group-item"><i class="fas fa-flask"></i> Scikit-learn</li>
+                    <li class="list-group-item"><i class="fab fa-android"></i> ROS</li>
+                    <li class="list-group-item"><i class="fas fa-font"></i> Pytesseract</li>
+                    <li class="list-group-item"><i class="fas fa-search"></i> YOLO</li>
+                    <li class="list-group-item"><i class="fas fa-fire"></i> Pytorch</li>
+                    <li class="list-group-item"><i class="fab fa-tensorflow"></i> Tensorflow</li>
+                    <li class="list-group-item"><i class="fas fa-link"></i> Langchain</li>
+                  </ol>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fab fa-css3-alt"></i></div>
-                  <h5>CSS</h5>
+            </div>
+          </div>
+        </div>
+      
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Tools
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                <div class="card-body">
+                  <ol class="list-group">
+                    <li class="list-group-item"><i class="fab fa-docker"></i> Docker</li>
+                    <li class="list-group-item"><i class="fab fa-kubernetes"></i> Kubernetes</li>
+                    <li class="list-group-item"><i class="fab fa-git"></i> GIT</li>
+                  </ol>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fab fa-wordpress"></i></div>
-                  <h5>WordPress</h5>
-                </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Soft Skills
+                  </button>
+                </h5>
               </div>
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fab fa-bootstrap"></i></div>
-                  <h5>Bootstrap</h5>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fas fa-file-word"></i></div>
-                  <h5>MS Word</h5>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
-                  <h5>MS Powerpoint</h5>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fas fa-users"></i></div>
-                  <h5>Team Work</h5>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fas fa-lightbulb"></i></div>
-                  <h5>Problem Solving</h5>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                <div class="card-body">
+                  <ol class="list-group">
+                    <li class="list-group-item"><i class="fas fa-lightbulb"></i> Problem Solving</li>
+                    <li class="list-group-item"><i class="fas fa-brain"></i> Critical Thinking</li>
+                    <li class="list-group-item"><i class="fas fa-exchange-alt"></i> Quick Adaptation</li>
+                    <li class="list-group-item"><i class="fas fa-search"></i> Research Oriented</li>
+                    <li class="list-group-item"><i class="fas fa-users"></i> Team Player</li>
+                  </ol>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </section>
     <!-- Services end-->
     <!-- Portfolio / gallery-->
@@ -166,6 +217,9 @@
               <div class="col-md-4">
                 <div class="box"><a href="img/itsquare.jpeg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/itsquare.jpeg" alt="image" class="img-fluid"></a></div>
               </div> 
+              <div class="col-md-4">
+                <div class="box"><a href="img/ibm_intern.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/ibm_intern.jpg" alt="image" class="img-fluid"></a></div>
+              </div> 
             </div>
           </div>
         </div>
@@ -174,39 +228,115 @@
     <!-- Portfolio / gallery end-->
     <!-- text page-->
     <section id="text" class="text-page section-inverse">
-      <div class="container">
+      <div class="container mt-4">
+        <h2 class="heading">Projects</h2>
         <div class="row">
-          <div class="col-lg-12">
-            <h2 class="heading">Projects</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <h5>Car speed detector (08/2019 - 11/2019)</h5>
-                <p>Detecting the speed of an object/car using IR sensors.</p>
-                <br>
-                <h5>Facial features detection (08/2020 - 12/2020)</h5>
-                <p>Detecting the features of a face such as the face, eyes and smile on
-                  an existing image or live, through a webcam.</p>
-                <br>
-                <h5>Image processing using python libraries (02/2019 - 05/2019)</h5>
-                <p>Taking an image as an input and converting it into five different
-                  types such as Cartoon, Black&White, Pencil Sketch, Pixelated and
-                  Enhanced Sharpness.</p>
+          <!-- First Row -->
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; height: 35rem;">
+              <img class="card-img-top" src="./img/sample_fp.jpg" alt="Card image cap" style="height: 200px; width:280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #111;">Fingerprint Verification using SIFT Features</h5>
+                <h8 style="color: #111;">(02/2023 - 05/2023)</h8>
+                <p class="card-text" style="color: #111;">A model that detects features from a given fingerprint and cross
+                  match it with a given set of images in order to figure out if they match.</p>
+                <a href="https://github.com/samarthgangwal/fingerprint_recognition" class="btn btn-dark" target="_blank">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                  <a href="https://drive.google.com/file/d/1aKTs-v3Z_9dlb18MnIzwmSTZNXg-uRI7/view?usp=sharing" class="btn btn-info" target="_blank">
+                    <i class="fas fa-file-alt"></i> Report
+                  </a>
+                
               </div>
-              <div class="col-md-6">
-                <h5>Find a Tutor (Web Application) (02/2021 - 05/2021)</h5>
-                <p>Creating a Web Application to connect tutors with potential clients.</p>
-                <br>
-                <h5>IoT in Retail Advertising - R&D (01/2021 - 05/2021)</h5>
-                <p>Applications of IoT in enhancing the retail experience of a
-                  consumer through advertising</p>
-                <br>
-                <h5>IMDB Reviews Sentiment Analysis (01/2021 - 05/2021)</h5>
-                <p>Analysing the sentiment reviews of IMDB dataset</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; height: 35rem;">
+              <img class="card-img-top" src="./img/facialfeatures.jpg" alt="Card image cap" style="height: 200px; width:280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #111;">Facial features detection</h5>
+                <h8 style="color: #111;">(08/2020 - 12/2020)</h8>
+                <p class="card-text" style="color: #111;">Detecting the features of a face such as the face, eyes and smile on an existing
+                  image or live, through a webcam.</p>
+                <a href="https://github.com/samarthgangwal/Facial-features-detection" class="btn btn-dark" target="_blank">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; height: 35rem;">
+                  <img class="card-img-top" src="./img/imgpro_py.jpg" alt="Card image cap" style="height: 200px; width:285px;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: #111;">Image processing using python libraries</h5>
+                    <h8 style="color: #111;">(02/2019 - 05/2019)</h8>
+                    <p class="card-text" style="color: #111;">Taking an image as an input and converting it into five
+                      different types such as Cartoon, Black&White, Pencil Sketch, Pixelated and Enhanced Sharpness</p>
+                    <a href="https://github.com/samarthgangwal/image-processing-opencv" class="btn btn-dark" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://drive.google.com/file/d/1ZIwBAB9UK9-z_24lWnInLa0dFgR61iYu/view?usp=sharing" class="btn btn-info" target="_blank">
+                      <i class="fas fa-file-alt"></i> Report
+                    </a>
+                  </div>
+                </div>
+          </div>
+        </div>
+      
+        <div class="row mt-4">
+          <!-- Second Row -->
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; height: 35rem;">
+              <img class="card-img-top" src="./img/iotRetailadv.jpg" alt="Card image cap" style="height: 200px; width:280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #111;">IoT in Retail Advertising - R&D Project</h5>
+                <h8 style="color: #111;">(01/2021 - 05/2021)</h8>
+                <p class="card-text" style="color: #111;">Applications of IoT in enhancing the retail experience of a
+                  consumer through advertising.</p>>
+                <a href="https://github.com/samarthgangwal/Retail-Adv" class="btn btn-dark" target="_blank">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://drive.google.com/file/d/1Z3zcaOaSS5TMV1cyO-b-XasEGHUjxKu9/view?usp=sharing" class="btn btn-danger" target="_blank">
+                  <i class="fas fa-video"></i> Video
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; height: 35rem;">
+              <img class="card-img-top" src="./img/virtualfit.jpg" alt="Card image cap" style="height: 200px; width:280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #111;">Virtual Fitting Rooms - Advance R&D Project</h5>
+                <h8 style="color: #111;">(08/2021 - 12/2021)</h8>
+                <p class="card-text" style="color: #111;">Changing the clothes of the user virtually by
+                  capturing the image and using the visual try-on network Adaptive Content Generating and Preserving Network (ACGPN).</p>
+                <a href="https://github.com/samarthgangwal/virtual-fitting-rooms" class="btn btn-dark" target="_blank">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://drive.google.com/file/d/1bIe4o8raqSWTF9GHp5KeLUuVxOAtSmQW/view?usp=sharing" class="btn btn-danger" target="_blank">
+                  <i class="fas fa-video"></i> Video
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; height: 35rem;">
+              <img class="card-img-top" src="./img/licensePlate.jpg" alt="Card image cap" style="height: 200px; width:280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #111;">IoT Smart Parking System - Licence Plate Recognition</h5>
+                <h8 style="color: #111;">(08/2023 - 12/2023)</h8>
+                <p class="card-text" style="color: #111;">A smart way of making car parking efficient using computer vision
+                  techniques for automatic license plate recognition, followed by integration with hardware sensors to determine the occupancy of a
+                  parking spot.</p>
+                <a href="https://github.com/samarthgangwal/license_plate_detection" class="btn btn-dark" target="_blank">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </section>
     <!-- text page end-->
      <!-- text page-->
@@ -217,8 +347,9 @@
             <h2 class="heading">Work Experience</h2>
             <div class="row">
               <div class="col-md-6">
-                <h5>Web Developer Intern</h5>
-                <h6>IT Square</h6>
+                <img src="./img/itsquare_logo.jpeg" alt="..." class="img-thumbnail">
+                <h5>IT Qquare</h5>
+                <h6>Web Developer Intern</h6>
                 <p><i>Location: Alexandria, Egypt (06/2019 - 07/2019)</i></p>
                 <p><i>Achievements/Tasks</i></p>
                 <p><ul>
@@ -228,6 +359,22 @@
                     of the website.</li>
                   <li>Integrate social media such as Facebook and Instagram with
                     the website using WordPress plugins.</li>
+                </ul></p>
+                <br>
+                <img src="./img/ibm_logo.jpg" alt="..." class="img-thumbnail" style="height: 200px; width: 200px;">
+                <h5>IBM - India Software Labs</h5>
+                <h6>Software Engineering Intern</h6>
+                <p><i>Location: Bangalore, India (01/2022 - 07/2022)</i></p>
+                <p><i>Achievements/Tasks</i></p>
+                <p><ul>
+                  <li>Supply Chain Management: Understanding the basic concepts of supply chain management and its role in the industry.</li>
+                  <li>Order Management System: Understanding how Order Management System (OMS) plays a crucial role in the businesses
+                    and the industry.</li>
+                  <li>Service Creation: Created services using Java to implement on IBM’s product Sterling OMS</li>
+                  <li>Store Creation: Created a front-end store using basic technologies - HTML,CSS,Bootstrap and Angular.</li>
+                  <li>Product Deployment: Continuous product deployment during the internship on various container platforms.</li>
+                  <li>Product Optimization: Worked on optimization of the product’s memory usage using various Machine Learning
+                    algorithms.</li>
                 </ul></p>
               </div>
             </div>
@@ -244,19 +391,16 @@
             <h2 class="heading">Co-curriculars</h2>
             <div class="row">
               <div class="col-md-6">
-                <h5>AIESEC at NIIT University (01/2020 - Present)</h5>
+                <img src="./img/aiesec_logo.jpeg" alt="..." class="img-thumbnail">
+                <h5>AIESEC at NIIT University (01/2020 - 10/2021)</h5>
                 <h6><i>Vice President, outgoing Global Talent (oGTa)</i></h6>
-                <br>
-                <h5>NanoEPL Mentor at NIIT University (06/2020 - 12/2020)</h5>
-                <h6><i>Associate Mentor</i></h6>
+                <h8>As the Vice President of outgoing Global Talent (oGTa), conducted seminars to make the students aware about AIESEC and provided internship opportunities.</h8>
               </div>
               <div class="col-md-6">
-                <h5>Java Mentor (06/2020 - 12/2020)</h5>
-                <h6><i>Helped 2nd year students for creating a Java application of examination system</i></h6>
-                <br>
-                <br>
-                <h5>Workshop Mentor (06/2020 - 12/2020)</h5>
-                <h6><i>Helped 1st year students with creating smart invigilation system</i></h6>
+                <img src="./img/unnat_bharat_logo.jpg" alt="..." class="img-thumbnail" style="height: 190px; width:250px;">
+                <h5>Unnat Bharat Abhiyan (01/2020 - 06/2020)</h5>
+                <h6><i>Student Volunteer</i></h6>
+                <h8>Took part in social events such as tree plantation drive, organizing events in the schools nearby to make them aware about the environment and global warming.</h8>
               </div>
             </div>
           </div>
@@ -270,54 +414,24 @@
         <div class="row">
           <div class="col-lg-12">
             <h2 class="heading">Contact</h2>
-            <div class="row">
               <div class="col-lg-6">
-                <form id="contact-form" method="post" action="#" class="contact-form">
-                  <div class="controls">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="name">Your firstname *</label>
-                          <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="surname">Your lastname *</label>
-                          <input type="text" name="surname" placeholder="Enter your  lastname" required="required" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="surname">Your email *</label>
-                      <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label for="surname">Your message for us *</label>
-                      <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
-                    </div>
-                    <div class="text-center">
-                      <input type="submit" name="name" value="Send message" class="btn btn-outline-primary btn-block">
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="col-lg-6">
-                <p>Do contact us if you have any queries! By filling the form.</p>
-                <p>You can also contact by using the social media handles given below!</p>
-                <p class="social"><a href="https://www.linkedin.com/in/samarth-gangwal-006977178/" title="" class="facebook"><i class="fab fa-linkedin"></i></a><a href="https://github.com/samarthgangwal" title="" class="instagram"><i class="fab fa-github"></i></a><a href="samarth.gangwal18@st.niituniversity.in" title="" class="email"><i class="fa fa-envelope"></i></a></p>
+                <p>Feel free to reach out by using the social media handles given below!</p>
+                <p class="social"><a href="https://www.linkedin.com/in/samarth-gangwal-006977178/" title="" class="facebook"><i class="fab fa-linkedin"></i></a><a href="https://github.com/samarthgangwal" title="" class="instagram"><i class="fab fa-github"></i></a><a href="mailto:samarthgangwal@gmail.com" title="" class="email"><i class="fa fa-envelope"></i></a></p>
+                <br>
+                <h4>Resume</h4>
+                <br>
+                <iframe src="https://drive.google.com/file/d/1KIThMCjrlK7GsrFiOC-aOpzkGT9gl5jf/preview" width="640" height="800" allow="autoplay"></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div id="map"></div>
     <footer style="background-color: #111;">
       <div class="container"> 
         <div class="row copyright">
           <div class="col-md-6">
-            <p class="mb-md-0 text-center text-md-left">&copy;2021 Samarth Gangwal</p>
+            <p class="mb-md-0 text-center text-md-left">&copy;2024 Samarth Gangwal</p>
           </div>
           <div class="col-md-6">
             <p class="credit mb-md-0 text-center text-md-right">Template by <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form">Bootstrapious</a></p>
@@ -333,5 +447,6 @@
     <script src="vendor/lightbox2/js/lightbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
     <script src="js/front.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </body>
 </html>
